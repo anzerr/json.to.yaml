@@ -36,7 +36,7 @@ class Parser {
 		if (x.length <= ENUM.MAX_TEXT && x.indexOf('\n') === -1) {
 			return JSON.stringify(x);
 		}
-		let text = x.split(/\\n|\n/);
+		let text = x.split(/(\S+\s+)/).split(/\\n|\n/);
 		this.indentLevel = this.indentLevel.replace(/$/, '  ');
 		for (let i in text) {
 			output += '\n' + this.indentLevel + text[i];
