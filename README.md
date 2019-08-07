@@ -4,7 +4,8 @@ Convert JSON to YAML
 
 #### `Install`
 ``` bash
-npm install --save git+https://git@github.com/anzerr/json.to.yaml.git
+npm install --save git+https://github.com/anzerr/json.to.yaml.git
+npm install --save @anzerr/json.to.yaml
 ```
 
 ### `Example`
