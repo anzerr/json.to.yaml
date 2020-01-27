@@ -1,7 +1,14 @@
 {
 	"name": "json.to.yaml",
 	"version": "1.0.8",
-	"keywords": [],
+	"description": "json to yaml format",
+	"keywords": [
+		"json",
+		"nodejs",
+		"transform",
+		"util",
+		"yaml"
+	],
 	"homepage": "https://github.com/anzerr/json.to.yaml#readme",
 	"bugs": {
 		"url": "https://github.com/anzerr/json.to.yaml/issues"
