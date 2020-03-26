@@ -3,8 +3,8 @@ const Parser = require('./src/parser.js');
 
 class YAML {
 
-	stringify(data) {
-		return '---' + (new Parser())[typeof data](data) + '\n';
+	stringify(data, config) {
+		return '---' + (new Parser(config))[typeof data](data) + '\n';
 	}
 
 }

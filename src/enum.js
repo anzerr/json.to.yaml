@@ -1,4 +1,4 @@
 
 module.exports = {
-	MAX_TEXT: 60
+	MAX_TEXT: 255
 };

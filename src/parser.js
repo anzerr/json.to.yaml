@@ -3,10 +3,14 @@ const ENUM = require('./enum.js');
 
 class Parser {
 
-	constructor() {
+	constructor(config = {}) {
 		this.indentLevel = '';
 		this.type = {
 			function: 'func'
+		};
+		this.enum = {
+			...ENUM,
+			...config
 		};
 	}
 
@@ -33,7 +37,7 @@ class Parser {
 
 	string(x) {
 		let output = '|';
-		if (x.length <= ENUM.MAX_TEXT && x.indexOf('\n') === -1) {
+		if (x.length <= this.enum.MAX_TEXT && x.indexOf('\n') === -1) {
 			return JSON.stringify(x);
 		}
 		let text = x.split(/\\n|\n/);
